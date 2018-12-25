@@ -15,3 +15,4 @@ The design layout is taken from an (incomplete) [game I made] (https://github.co
 #### Future Possible Additions
 - Color Schemes for numbers
 - Adapt For Mobile
+- Difficulty levels
