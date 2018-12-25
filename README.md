@@ -10,7 +10,7 @@ T is built using the following technologies
 - [X] HTML
 - [X] CSS
 
-The design layout is taken from an (incomplete) [game I made] (https://github.com/this-marwan/TapTap).
+The design layout is taken from an (incomplete) [game I made](https://github.com/this-marwan/TapTap "TapTap").
 
 #### Future Possible Additions
 - Color Schemes for numbers
