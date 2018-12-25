@@ -52,19 +52,16 @@ function checkKey(e) {
  if (e.keyCode == 40) {
         // down arrow
 		key = 40;
-		Csound.play();
 		playTurn();
     }
     else if (e.keyCode == 37) {
        // left arrow
 	    key = 37;
-		Csound.play();
 		playTurn();
     }
     else if (e.keyCode == 39) {
        // right arrow
 	  key = 39;
-	  Csound.play();
 	  playTurn();
     }
 	key = 0;
@@ -97,6 +94,7 @@ function playTurn(){
 					pos--;
 		}
 	}
+	Csound.play();
 	updatePad();
 }//controls movement of block
 
