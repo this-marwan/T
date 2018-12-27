@@ -216,40 +216,18 @@ function updatePad(){
 	document.getElementById(str).parentElement.style.backgroundColor = "#8BC34A";
 
    //push new information to the table, can be merged with the coloring function above
-	document.getElementById("00").innerHTML = padArr[0];
-	document.getElementById("01").innerHTML = padArr[1];
-	document.getElementById("02").innerHTML = padArr[2];
-	document.getElementById("03").innerHTML = padArr[3];
+	 var nodes = document.getElementById("Pad").getElementsByTagName("div");
+ 	for(var i=0; i<nodes.length; i++) {
+ 			if (padArr[i] != 0)
+ 			{
+ 	    nodes[i].innerHTML = padArr[i];
+ 		}
+ 		else{
+ 			nodes[i].innerHTML = " ";
+ 		}
+ 	}
 
-	document.getElementById("10").innerHTML = padArr[4];
-	document.getElementById("11").innerHTML = padArr[5];
-	document.getElementById("12").innerHTML = padArr[6];
-	document.getElementById("13").innerHTML = padArr[7];
 
-	document.getElementById("20").innerHTML = padArr[8];
-	document.getElementById("21").innerHTML = padArr[9];
-	document.getElementById("22").innerHTML = padArr[10];
-	document.getElementById("23").innerHTML = padArr[11];
-
-	document.getElementById("30").innerHTML = padArr[12];
-	document.getElementById("31").innerHTML = padArr[13];
-	document.getElementById("32").innerHTML = padArr[14];
-	document.getElementById("33").innerHTML = padArr[15];
-
-	document.getElementById("40").innerHTML = padArr[16];
-	document.getElementById("41").innerHTML = padArr[17];
-	document.getElementById("42").innerHTML = padArr[18];
-	document.getElementById("43").innerHTML = padArr[19];
-
-	document.getElementById("50").innerHTML = padArr[20];
-	document.getElementById("51").innerHTML = padArr[21];
-	document.getElementById("52").innerHTML = padArr[22];
-	document.getElementById("53").innerHTML = padArr[23];
-
-	document.getElementById("60").innerHTML = padArr[24];
-	document.getElementById("61").innerHTML = padArr[25];
-	document.getElementById("62").innerHTML = padArr[26];
-	document.getElementById("63").innerHTML = padArr[27];
 
 	//update score baord
 	strngScore = Score.toString();

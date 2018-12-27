@@ -28,6 +28,10 @@ tr,td{
 	text-align:center;
 	vertical-align: middle;
 }
+td{
+	width: 25%;
+	height : 14.3%;
+}
 table{
 	border-collapse: collapse;
 	height:100%;
