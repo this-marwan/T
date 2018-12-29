@@ -16,3 +16,9 @@ The design layout is taken from an (incomplete) [game I made](https://github.com
 - Color Schemes for numbers
 - Adapt For Mobile
 - Difficulty levels
+
+
+
+
+
+*The sound effect is made by user Cahen and can be attained from here : https://freesound.org/people/cahen/sounds/191177/*
