@@ -138,23 +138,11 @@ function wins(){
 
 				if (streak == 3) //found a streak of atleast 4
 				{
-					if (padArr[i+j] == padArr[i+j+2]) //found a streak of 5
-					{
-						columnDown(i);
-						columnDown(i+1);
-						columnDown(i+2);
-						columnDown(i+3);
-						columnDown(i+4);
-						Score += 15;
-					}
-					else
-					{
 						columnDown(i+j);
 						columnDown(i+j+1);
 						columnDown(i+j-1);
 						columnDown(i+j-2);
 						Score += 10;
-					}
 				}
 
 		}
@@ -169,8 +157,6 @@ function wins(){
 
 							if (cStreak == 3) //found a streak of atleast 4
 							{
-								console.log("streak");
-								console.log(i + " " +j);
 								//push column four steps downwards
 									columnDown(i+j);
 									columnDown(i+j);
@@ -204,16 +190,34 @@ function updatePad(){
   //this is the worst way to do this smh
 	var nodes = document.getElementById("Pad").getElementsByTagName("td");
 	for(var i=0; i<nodes.length; i++) {
-			if (padArr[i] != 0)
-			{
-	    nodes[i].style.backgroundColor = "#DCEDC8";
-		}
-		else{
+		switch(padArr[i]){
+			case 1:
+			nodes[i].style.backgroundColor = "#DCEDC8";
+			break;
+
+			case 2:
+			nodes[i].style.backgroundColor = "#F7B538";
+			break;
+
+			case 3:
+			nodes[i].style.backgroundColor = "#D80032";
+			break;
+
+			case 4:
+			nodes[i].style.backgroundColor = "#649130";
+			break;
+
+			case 5:
+			nodes[i].style.backgroundColor = "#30AD9C";
+			break;
+
+			default:
 			nodes[i].style.backgroundColor = "#263238";
+
 		}
 	}
 
-	document.getElementById(str).parentElement.style.backgroundColor = "#8BC34A";
+	//document.getElementById(str).parentElement.style.backgroundColor = "#8BC34A";
 
    //push new information to the table, can be merged with the coloring function above
 	 var nodes = document.getElementById("Pad").getElementsByTagName("div");
@@ -226,7 +230,6 @@ function updatePad(){
  			nodes[i].innerHTML = " ";
  		}
  	}
-
 
 
 	//update score baord
