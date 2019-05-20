@@ -13,7 +13,7 @@ T is built using the following technologies
 The design layout is taken from an (incomplete) [game I made](https://github.com/this-marwan/TapTap "TapTap").
 
 #### Future Possible Additions
-- Color Schemes for numbers
+~~- Color Schemes for numbers~~ ✅
 - Adapt For Mobile
 - Difficulty levels
 
