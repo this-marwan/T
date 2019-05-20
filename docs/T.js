@@ -46,6 +46,12 @@ function Begin(){
 	generate(); //generate a new block
 	updatePad();
 };
+
+function HowTo()
+{
+	document.getElementById("Menu").innerHTML = "Try to stack four blocks of the same number/color either vertically or horizontally to eliminate them and get points! </br> </br> 		<button type = \"button\" id = \"play\" onclick=\"Begin()\" style=\"margin-left:35px\">PLAY!!</button>";
+};
+
 function checkKey(e) {
 
     e = e || window.event;

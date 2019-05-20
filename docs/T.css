@@ -1,7 +1,7 @@
 html{
 width:100%;
 height:92.5%;
-font-family: 'Roboto', sans-serif;
+font-family: 'Verdana', sans-serif;
 
 }
 body{
@@ -46,6 +46,7 @@ table{
 
 #Menu{
 	position: absolute;
+	padding: 10px;
 	top: 0;
 	left: 0;
 	right:0;
@@ -73,18 +74,21 @@ table{
 	z-index:8;
 }
 
-/*#HowTo{
+#howTo{
 	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+	font-family:Verdana;
 	text-align:center;
-	height:32%;
-	width:50%;
 	position: absolute;
-	z-index:8;
+	height:30%;
+	width:50%;
 	border:none;
 	background-color:#DCEDC8;
 	border-radius: 5px;
 	margin:auto;
-}*/
+	z-index:8;
+}
+
+
 #Modes{
 	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
 	font-family:Verdana;
